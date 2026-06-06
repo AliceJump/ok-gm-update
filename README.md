@@ -10,7 +10,7 @@
 <h1 align="center">ok-gm</h1>
 
 <p>
-一个基于图像识别的终末地自动化程序，部分功能支持后台运行，基于 <a href="https://github.com/ok-oldking/ok-script">ok-script</a> 开发。
+一个基于图像识别的学马仕自动化程序，部分功能支持后台运行，基于 <a href="https://github.com/ok-oldking/ok-script">ok-script</a> 开发。
 <br />
 An image-recognition-based automation tool for End Field, with background mode support, developed with <a href="https://github.com/ok-oldking/ok-script">ok-script</a>.
 </p>
@@ -188,7 +188,7 @@ python -m unittest tests/TestEssenceRecognizer.py
   by [SignPath Foundation](https://signpath.org/).
 
 ### 致谢
-
+* [a4nqi3n/Gakumas_Launcher](https://github.com/a4nqi3n/Gakumas_Launcher)(`参考该仓库通过log获取启动游戏参数的方式`)
 * [ok-oldking/OnnxOCR](https://github.com/ok-oldking/OnnxOCR)
 * [zhiyiYo/PyQt-Fluent-Widgets](https://github.com/zhiyiYo/PyQt-Fluent-Widgets)
 * [Toufool/AutoSplit](https://github.com/Toufool/AutoSplit)

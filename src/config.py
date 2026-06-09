@@ -3,7 +3,7 @@ import os
 import numpy as np
 from ok import ConfigOption
 from src.interaction.EfInteraction import EfInteraction
-version = "v0.1.18"
+version = "v0.1.19"
 #不需要修改version, Github Action打包会自动修改
 
 config = {

@@ -37,6 +37,14 @@
             <source>Other Projects</source>
             <translation>관련 프로젝트</translation>
         </message>
+        <message>
+            <source>Update success {from_version} -&gt; {to_version}</source>
+            <translation>업데이트 성공 {from_version} -&gt; {to_version}</translation>
+        </message>
+        <message>
+            <source>Downgrade success {from_version} -&gt; {to_version}</source>
+            <translation>다운그레이드 성공 {from_version} -&gt; {to_version}</translation>
+        </message>
     </context>
     <context>
         <name>ActWindow</name>
@@ -198,13 +206,6 @@
         </message>
     </context>
     <context>
-        <name>DownloadBar</name>
-        <message>
-            <source>Installing {progress} {percent}%</source>
-            <translation>설치 중 {progress} {percent}%</translation>
-        </message>
-    </context>
-    <context>
         <name>GlobalConfigCard</name>
         <message>
             <source>Reset Config</source>
@@ -284,6 +285,50 @@
         <message>
             <source>Close</source>
             <translation>닫기</translation>
+        </message>
+        <message>
+            <source>Open Logs</source>
+            <translation>로그 열기</translation>
+        </message>
+        <message>
+            <source>All Levels</source>
+            <translation>모든 레벨</translation>
+        </message>
+        <message>
+            <source>Filter logs...</source>
+            <translation>로그 필터...</translation>
+        </message>
+        <message>
+            <source>Clear</source>
+            <translation>지우기</translation>
+        </message>
+        <message>
+            <source>Waiting for ok-script.log</source>
+            <translation>ok-script.log 대기 중</translation>
+        </message>
+        <message>
+            <source>records</source>
+            <translation>개</translation>
+        </message>
+        <message>
+            <source>Pause</source>
+            <translation>일시정지</translation>
+        </message>
+        <message>
+            <source>Resume</source>
+            <translation>재개</translation>
+        </message>
+        <message>
+            <source>View Log</source>
+            <translation>로그 보기</translation>
+        </message>
+        <message>
+            <source>Pin</source>
+            <translation>고정</translation>
+        </message>
+        <message>
+            <source>Unpin</source>
+            <translation>고정 해제</translation>
         </message>
     </context>
     <context>
@@ -423,6 +468,10 @@
             <source>Click an option to add it.</source>
             <translation>추가할 옵션을 클릭하세요.</translation>
         </message>
+        <message>
+            <source>Search options...</source>
+            <translation>옵션 검색...</translation>
+        </message>
     </context>
     <context>
         <name>ModifyListItem</name>
@@ -460,29 +509,6 @@
             <source>app</source>
             <comment>Error</comment>
             <translation>오류</translation>
-        </message>
-    </context>
-    <context>
-        <name>RunBar</name>
-        <message>
-            <source> Current Version: </source>
-            <translation> 현재 버전: </translation>
-        </message>
-        <message>
-            <source>Launcher </source>
-            <translation>런처</translation>
-        </message>
-        <message>
-            <source>Choose Profile:</source>
-            <translation>프로필 선택:</translation>
-        </message>
-        <message>
-            <source>Start</source>
-            <translation>시작</translation>
-        </message>
-        <message>
-            <source>Download Dependencies and Start</source>
-            <translation>의존성 다운로드 후 시작</translation>
         </message>
     </context>
     <context>
@@ -756,8 +782,8 @@
             <translation>게임을 시작할 수 없습니다. 게임이 설치되었는지 확인하세요</translation>
         </message>
         <message>
-            <source>NVIDIA/AMD filters or sharpening are enabled and may cause malfunctions!</source>
-            <translation>NVIDIA/AMD 필터 또는 선명화가 활성화되어 있어 오작동을 일으킬 수 있습니다!</translation>
+            <source>{vendor} {feature} is enabled and may cause malfunctions!</source>
+            <translation>{vendor} {feature} 기능이 활성화되어 있어 오작동을 일으킬 수 있습니다!</translation>
         </message>
         <message>
             <source>GPU Driver Warning</source>
@@ -818,12 +844,12 @@
             <translation>상호 작용 선택</translation>
         </message>
         <message>
-            <source>Show Overlay</source>
-            <translation>디버그 오버레이 표시</translation>
+            <source>Enable Boxes</source>
+            <translation>박스 사용</translation>
         </message>
         <message>
-            <source>Hide Overlay</source>
-            <translation>디버그 오버레이 숨기기</translation>
+            <source>Disable Boxes</source>
+            <translation>박스 사용 안 함</translation>
         </message>
         <message>
             <source>Show Log on Overlay</source>
@@ -864,6 +890,14 @@
         <message>
             <source>Log Folder</source>
             <translation>로그 폴더</translation>
+        </message>
+        <message>
+            <source>Open Logs</source>
+            <translation>로그 열기</translation>
+        </message>
+        <message>
+            <source>View Log</source>
+            <translation>로그 보기</translation>
         </message>
     </context>
     <context>
@@ -988,57 +1022,6 @@
         <message>
             <source>Time Elapsed</source>
             <translation>경과 시간</translation>
-        </message>
-    </context>
-    <context>
-        <name>UpdateBar</name>
-        <message>
-            <source>Current Version: </source>
-            <translation>현재 버전: </translation>
-        </message>
-        <message>
-            <source>Checking for Updates...</source>
-            <translation>업데이트 확인 중...</translation>
-        </message>
-        <message>
-            <source>Delete Downloaded Dependencies</source>
-            <translation>다운로드된 의존성 삭제</translation>
-        </message>
-        <message>
-            <source>Update Source:</source>
-            <translation>업데이트 소스:</translation>
-        </message>
-        <message>
-            <source>Check for Update</source>
-            <translation>업데이트 확인</translation>
-        </message>
-        <message>
-            <source>Current Version:</source>
-            <translation>현재 버전:</translation>
-        </message>
-        <message>
-            <source>TargetVersion:</source>
-            <translation>대상 버전:</translation>
-        </message>
-        <message>
-            <source>Update</source>
-            <translation>업데이트</translation>
-        </message>
-        <message>
-            <source>This is the newest version</source>
-            <translation>최신 버전입니다</translation>
-        </message>
-        <message>
-            <source>Checking for Update...</source>
-            <translation>업데이트 확인 중</translation>
-        </message>
-        <message>
-            <source>Updating</source>
-            <translation>업데이트 중</translation>
-        </message>
-        <message>
-            <source>Downgrade</source>
-            <translation>다운그레이드</translation>
         </message>
     </context>
     <context>
@@ -1169,6 +1152,30 @@
         <message>
             <source>Basic Options</source>
             <translation>기본 옵션</translation>
+        </message>
+        <message>
+            <source>Enable Blur</source>
+            <translation>블러 사용</translation>
+        </message>
+        <message>
+            <source>Blur Game UID etc to enhance OLED life</source>
+            <translation>게임 UID 등을 흐리게 표시하여 OLED 수명을 늘립니다</translation>
+        </message>
+        <message>
+            <source>Blur Algorithm</source>
+            <translation>가림 알고리즘</translation>
+        </message>
+        <message>
+            <source>Method used to obscure configured areas</source>
+            <translation>설정된 영역을 가리는 처리 방법</translation>
+        </message>
+        <message>
+            <source>Blur</source>
+            <translation>블러</translation>
+        </message>
+        <message>
+            <source>Inpaint</source>
+            <translation>인페인트</translation>
         </message>
         <message>
             <source>Use DirectML</source>
@@ -1351,7 +1358,7 @@
             <translation>베타 버전</translation>
         </message>
         <message>
-            <source>Kill Launcher after Start</source>
+            <source>Kill Launcher After Start</source>
             <translation>시작 후 런처 종료</translation>
         </message>
         <message>
@@ -1373,6 +1380,62 @@
         <message>
             <source>Target window inactive: Recording paused</source>
             <translation>대상 창 비활성: 녹화 일시 정지됨</translation>
+        </message>
+        <message>
+            <source>Blur Interval</source>
+            <translation>가림 확인 간격</translation>
+        </message>
+        <message>
+            <source>Seconds between processed overlay updates</source>
+            <translation>처리된 오버레이 업데이트 간격(초)</translation>
+        </message>
+        <message>
+            <source>App Launcher</source>
+            <translation>앱 실행기</translation>
+        </message>
+        <message>
+            <source>Configure the app launcher</source>
+            <translation>앱 실행기 구성</translation>
+        </message>
+        <message>
+            <source>Auto Start {app_name}</source>
+            <translation>{app_name} 자동 시작</translation>
+        </message>
+        <message>
+            <source>Start the launcher automatically when you sign in</source>
+            <translation>로그인할 때 앱 실행기를 자동으로 시작합니다</translation>
+        </message>
+        <message>
+            <source>Auto Update</source>
+            <translation>자동 업데이트</translation>
+        </message>
+        <message>
+            <source>Choose how the launcher installs updates</source>
+            <translation>실행기의 업데이트 설치 방식을 선택합니다</translation>
+        </message>
+        <message>
+            <source>Manual Update</source>
+            <translation>수동 업데이트</translation>
+        </message>
+        <message>
+            <source>Automatic Update(Release Only)</source>
+            <translation>자동 업데이트(정식 릴리스만)</translation>
+        </message>
+        <message>
+            <source>Automatic Update (Pre-release)</source>
+            <translation>자동 업데이트(사전 출시)</translation>
+        </message>
+        <message>
+            <source>Launcher</source>
+            <translation>실행기</translation>
+        </message>
+        <message>
+            <source>Open Launcher</source>
+            <translation>실행기 열기</translation>
+        </message>
+        <message>
+            <source>Open the app launcher to manage updates</source>
+            <translation>앱 실행기를 열어 업데이트를 관리합니다</translation>
         </message>
     </context>
     <context>
@@ -2606,6 +2669,36 @@
         <message>
             <source>NPU inferring Error, you might need to update the Intel NPU driver!</source>
             <translation>NPU 추론 오류, Intel NPU 드라이버를 업데이트해야 할 수 있습니다!</translation>
+        </message>
+    </context>
+    <context>
+        <name>GlobalConfigTab</name>
+        <message>
+            <source>Reset Config</source>
+            <translation>설정 초기화</translation>
+        </message>
+    </context>
+    <context>
+        <name>LabelAndFileSelector</name>
+        <message>
+            <source>Browse</source>
+            <translation>찾아보기</translation>
+        </message>
+        <message>
+            <source>Select File</source>
+            <translation>파일 선택</translation>
+        </message>
+        <message>
+            <source>Select Folder</source>
+            <translation>폴더 선택</translation>
+        </message>
+        <message>
+            <source>All Files (*)</source>
+            <translation>모든 파일 (*)</translation>
+        </message>
+        <message>
+            <source>Select File or Folder</source>
+            <translation>파일 또는 폴더 선택</translation>
         </message>
     </context>
 </TS>

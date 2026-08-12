@@ -5,21 +5,27 @@ from qfluentwidgets import BodyLabel, SettingCardGroup
 from ok.gui.about.ProjectCard import ProjectCard
 from ok.gui.about.VersionCard import VersionCard
 from ok.gui.util.app import get_localized_app_config
+from ok.gui.util.pyappify_startup import get_startup_version_change
 from ok.gui.widget.Tab import Tab
 from ok.util.file import get_path_relative_to_exe
 
 
 class AboutTab(Tab):
-    def __init__(self, config, updater):
+    def __init__(self, config):
         super().__init__()
         self.version_card = VersionCard(config, get_path_relative_to_exe(config.get('gui_icon')),
                                         config.get('gui_title'), config.get('version'),
                                         config.get('debug'), self)
-        self.updater = updater
-        self.vBoxLayout.setSpacing(0)
-        # Create a QTextEdit instance
+        # The About page uses the same section rhythm as the rest of the app.
         self.add_widget(self.version_card)
-        self.vBoxLayout.addSpacing(12)
+
+        if version_change := get_startup_version_change():
+            update_note_label = BodyLabel()
+            update_note_label.setText(version_change.content)
+            update_note_label.setWordWrap(True)
+            update_note_label.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
+            update_note_label.setContentsMargins(0, 0, 0, 0)
+            self.add_card(self._startup_version_change_title(version_change), update_note_label)
 
         projects = [
             {"name": "ok-py按键精灵", "url": "https://github.com/ok-oldking/ok-py"},
@@ -42,18 +48,15 @@ class AboutTab(Tab):
         if filtered_projects:
             self.group = SettingCardGroup(self.tr("Other Projects"), self)
             
-            # --- ADD THIS LINE ---
-            # Force the SettingCardGroup to only be as tall as its contents
             self.group.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
             
             grid_widget = QWidget()
-            # You already have this constraint for the inner widget, which is great:
             grid_widget.setSizePolicy(grid_widget.sizePolicy().horizontalPolicy(), QSizePolicy.Fixed)
             
             grid_layout = QGridLayout(grid_widget)
             grid_layout.setContentsMargins(0, 0, 0, 0)
-            grid_layout.setHorizontalSpacing(8)
-            grid_layout.setVerticalSpacing(8)
+            grid_layout.setHorizontalSpacing(12)
+            grid_layout.setVerticalSpacing(12)
             grid_layout.setAlignment(Qt.AlignTop)
 
             for i, project in enumerate(filtered_projects):
@@ -69,8 +72,18 @@ class AboutTab(Tab):
             about_label.setText(about)
             about_label.setWordWrap(True)
             about_label.setOpenExternalLinks(True)
+            about_label.setTextInteractionFlags(Qt.TextBrowserInteraction)
             about_label.setContentsMargins(0, 0, 0, 0)
 
-            self.add_widget(about_label)
+            self.add_card(None, about_label)
 
         self.vBoxLayout.addStretch(1)
+
+    def _startup_version_change_title(self, version_change):
+        if version_change.action == "update":
+            title = self.tr("Update success {from_version} -> {to_version}")
+        elif version_change.action == "downgrade":
+            title = self.tr("Downgrade success {from_version} -> {to_version}")
+        else:
+            return version_change.title
+        return title.format(from_version=version_change.from_version, to_version=version_change.to_version)

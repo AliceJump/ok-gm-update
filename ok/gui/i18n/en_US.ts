@@ -37,6 +37,14 @@
             <source>Other Projects</source>
             <translation>Other Projects</translation>
         </message>
+        <message>
+            <source>Update success {from_version} -&gt; {to_version}</source>
+            <translation>Update success {from_version} -&gt; {to_version}</translation>
+        </message>
+        <message>
+            <source>Downgrade success {from_version} -&gt; {to_version}</source>
+            <translation>Downgrade success {from_version} -&gt; {to_version}</translation>
+        </message>
     </context>
     <context>
         <name>ActWindow</name>
@@ -189,13 +197,6 @@
         </message>
     </context>
     <context>
-        <name>DownloadBar</name>
-        <message>
-            <source>Installing {progress} {percent}%</source>
-            <translation>Installing {progress} {percent}%</translation>
-        </message>
-    </context>
-    <context>
         <name>GlobalConfigCard</name>
         <message>
             <source>Reset Config</source>
@@ -275,6 +276,50 @@
         <message>
             <source>Close</source>
             <translation>Close</translation>
+        </message>
+        <message>
+            <source>Open Logs</source>
+            <translation>Open Logs</translation>
+        </message>
+        <message>
+            <source>All Levels</source>
+            <translation>All Levels</translation>
+        </message>
+        <message>
+            <source>Filter logs...</source>
+            <translation>Filter logs...</translation>
+        </message>
+        <message>
+            <source>Clear</source>
+            <translation>Clear</translation>
+        </message>
+        <message>
+            <source>Waiting for ok-script.log</source>
+            <translation>Waiting for ok-script.log</translation>
+        </message>
+        <message>
+            <source>records</source>
+            <translation>records</translation>
+        </message>
+        <message>
+            <source>Pause</source>
+            <translation>Pause</translation>
+        </message>
+        <message>
+            <source>Resume</source>
+            <translation>Resume</translation>
+        </message>
+        <message>
+            <source>View Log</source>
+            <translation>View Log</translation>
+        </message>
+        <message>
+            <source>Pin</source>
+            <translation>Pin</translation>
+        </message>
+        <message>
+            <source>Unpin</source>
+            <translation>Unpin</translation>
         </message>
     </context>
     <context>
@@ -412,6 +457,10 @@
             <source>Click an option to add it.</source>
             <translation>Click an option to add it.</translation>
         </message>
+        <message>
+            <source>Search options...</source>
+            <translation>Search options...</translation>
+        </message>
     </context>
     <context>
         <name>ModifyListItem</name>
@@ -461,29 +510,6 @@
             <source>app</source>
             <comment>Error</comment>
             <translation>app</translation>
-        </message>
-    </context>
-    <context>
-        <name>RunBar</name>
-        <message>
-            <source> Current Version: </source>
-            <translation> Current Version: </translation>
-        </message>
-        <message>
-            <source>Launcher </source>
-            <translation>Launcher </translation>
-        </message>
-        <message>
-            <source>Choose Profile:</source>
-            <translation>Choose Profile:</translation>
-        </message>
-        <message>
-            <source>Start</source>
-            <translation>Start</translation>
-        </message>
-        <message>
-            <source>Download Dependencies and Start</source>
-            <translation>Download Dependencies and Start</translation>
         </message>
     </context>
     <context>
@@ -757,8 +783,8 @@
             <translation>Can't start game, make sure the game is installed</translation>
         </message>
         <message>
-            <source>NVIDIA/AMD filters or sharpening are enabled and may cause malfunctions!</source>
-            <translation>NVIDIA/AMD filters or sharpening are enabled and may cause malfunctions!</translation>
+            <source>{vendor} {feature} is enabled and may cause malfunctions!</source>
+            <translation>{vendor} {feature} is enabled and may cause malfunctions!</translation>
         </message>
         <message>
             <source>GPU Driver Warning</source>
@@ -819,12 +845,12 @@
             <translation>Choose Interaction</translation>
         </message>
         <message>
-            <source>Show Overlay</source>
-            <translation>Show Overlay</translation>
+            <source>Enable Boxes</source>
+            <translation>Enable Boxes</translation>
         </message>
         <message>
-            <source>Hide Overlay</source>
-            <translation>Hide Overlay</translation>
+            <source>Disable Boxes</source>
+            <translation>Disable Boxes</translation>
         </message>
         <message>
             <source>Show Log on Overlay</source>
@@ -865,6 +891,14 @@
         <message>
             <source>Log Folder</source>
             <translation>Log Folder</translation>
+        </message>
+        <message>
+            <source>Open Logs</source>
+            <translation>Open Logs</translation>
+        </message>
+        <message>
+            <source>View Log</source>
+            <translation>View Log</translation>
         </message>
     </context>
     <context>
@@ -989,57 +1023,6 @@
         <message>
             <source>Time Elapsed</source>
             <translation>Time Elapsed</translation>
-        </message>
-    </context>
-    <context>
-        <name>UpdateBar</name>
-        <message>
-            <source>Current Version: </source>
-            <translation>Current Version: </translation>
-        </message>
-        <message>
-            <source>Checking for Updates...</source>
-            <translation>Checking for Updates...</translation>
-        </message>
-        <message>
-            <source>Delete Downloaded Dependencies</source>
-            <translation>Delete Downloaded Dependencies</translation>
-        </message>
-        <message>
-            <source>Update Source:</source>
-            <translation>Update Source:</translation>
-        </message>
-        <message>
-            <source>Check for Update</source>
-            <translation>Check for Update</translation>
-        </message>
-        <message>
-            <source>Current Version:</source>
-            <translation>Current Version:</translation>
-        </message>
-        <message>
-            <source>TargetVersion:</source>
-            <translation>TargetVersion:</translation>
-        </message>
-        <message>
-            <source>Update</source>
-            <translation>Update</translation>
-        </message>
-        <message>
-            <source>This is the newest version</source>
-            <translation>This is the newest version</translation>
-        </message>
-        <message>
-            <source>Checking for Update...</source>
-            <translation>Checking for Update...</translation>
-        </message>
-        <message>
-            <source>Updating</source>
-            <translation>Updating</translation>
-        </message>
-        <message>
-            <source>Downgrade</source>
-            <translation>Downgrade</translation>
         </message>
     </context>
     <context>
@@ -1170,6 +1153,30 @@
         <message>
             <source>Basic Options</source>
             <translation>Basic Options</translation>
+        </message>
+        <message>
+            <source>Enable Blur</source>
+            <translation>Enable Blur</translation>
+        </message>
+        <message>
+            <source>Blur Game UID etc to enhance OLED life</source>
+            <translation>Blur Game UID etc to enhance OLED life</translation>
+        </message>
+        <message>
+            <source>Blur Algorithm</source>
+            <translation>Blur Algorithm</translation>
+        </message>
+        <message>
+            <source>Method used to obscure configured areas</source>
+            <translation>Method used to obscure configured areas</translation>
+        </message>
+        <message>
+            <source>Blur</source>
+            <translation>Blur</translation>
+        </message>
+        <message>
+            <source>Inpaint</source>
+            <translation>Inpaint</translation>
         </message>
         <message>
             <source>Use DirectML</source>
@@ -1364,8 +1371,8 @@
             <translation>Beta Version</translation>
         </message>
         <message>
-            <source>Kill Launcher after Start</source>
-            <translation>Kill Launcher after Start</translation>
+            <source>Kill Launcher After Start</source>
+            <translation>Kill Launcher After Start</translation>
         </message>
         <message>
             <source>Target window active: Recording resumed</source>
@@ -1374,6 +1381,62 @@
         <message>
             <source>Target window inactive: Recording paused</source>
             <translation>Target window inactive: Recording paused</translation>
+        </message>
+        <message>
+            <source>Blur Interval</source>
+            <translation>Blur Interval</translation>
+        </message>
+        <message>
+            <source>Seconds between processed overlay updates</source>
+            <translation>Seconds between processed overlay updates</translation>
+        </message>
+        <message>
+            <source>App Launcher</source>
+            <translation>App Launcher</translation>
+        </message>
+        <message>
+            <source>Configure the app launcher</source>
+            <translation>Configure the app launcher</translation>
+        </message>
+        <message>
+            <source>Auto Start {app_name}</source>
+            <translation>Auto Start {app_name}</translation>
+        </message>
+        <message>
+            <source>Start the launcher automatically when you sign in</source>
+            <translation>Start the launcher automatically when you sign in</translation>
+        </message>
+        <message>
+            <source>Auto Update</source>
+            <translation>Auto Update</translation>
+        </message>
+        <message>
+            <source>Choose how the launcher installs updates</source>
+            <translation>Choose how the launcher installs updates</translation>
+        </message>
+        <message>
+            <source>Manual Update</source>
+            <translation>Manual Update</translation>
+        </message>
+        <message>
+            <source>Automatic Update(Release Only)</source>
+            <translation>Automatic Update(Release Only)</translation>
+        </message>
+        <message>
+            <source>Automatic Update (Pre-release)</source>
+            <translation>Automatic Update (Pre-release)</translation>
+        </message>
+        <message>
+            <source>Launcher</source>
+            <translation>Launcher</translation>
+        </message>
+        <message>
+            <source>Open Launcher</source>
+            <translation>Open Launcher</translation>
+        </message>
+        <message>
+            <source>Open the app launcher to manage updates</source>
+            <translation>Open the app launcher to manage updates</translation>
         </message>
     </context>
     <context>
@@ -2607,6 +2670,36 @@
         <message>
             <source>NPU inferring Error, you might need to update the Intel NPU driver!</source>
             <translation>NPU inferring Error, you might need to update the Intel NPU driver!</translation>
+        </message>
+    </context>
+    <context>
+        <name>GlobalConfigTab</name>
+        <message>
+            <source>Reset Config</source>
+            <translation>Reset Config</translation>
+        </message>
+    </context>
+    <context>
+        <name>LabelAndFileSelector</name>
+        <message>
+            <source>Browse</source>
+            <translation>Browse</translation>
+        </message>
+        <message>
+            <source>Select File</source>
+            <translation>Select File</translation>
+        </message>
+        <message>
+            <source>Select Folder</source>
+            <translation>Select Folder</translation>
+        </message>
+        <message>
+            <source>All Files (*)</source>
+            <translation>All Files (*)</translation>
+        </message>
+        <message>
+            <source>Select File or Folder</source>
+            <translation>Select File or Folder</translation>
         </message>
     </context>
 </TS>

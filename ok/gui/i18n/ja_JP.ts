@@ -37,6 +37,14 @@
             <source>Other Projects</source>
             <translation>関連プロジェクト</translation>
         </message>
+        <message>
+            <source>Update success {from_version} -&gt; {to_version}</source>
+            <translation>アップデート成功 {from_version} -&gt; {to_version}</translation>
+        </message>
+        <message>
+            <source>Downgrade success {from_version} -&gt; {to_version}</source>
+            <translation>ダウングレード成功 {from_version} -&gt; {to_version}</translation>
+        </message>
     </context>
     <context>
         <name>ActWindow</name>
@@ -198,13 +206,6 @@
         </message>
     </context>
     <context>
-        <name>DownloadBar</name>
-        <message>
-            <source>Installing {progress} {percent}%</source>
-            <translation>インストール中 {progress} {percent}%</translation>
-        </message>
-    </context>
-    <context>
         <name>GlobalConfigCard</name>
         <message>
             <source>Reset Config</source>
@@ -284,6 +285,50 @@
         <message>
             <source>Close</source>
             <translation>閉じる</translation>
+        </message>
+        <message>
+            <source>Open Logs</source>
+            <translation>ログを開く</translation>
+        </message>
+        <message>
+            <source>All Levels</source>
+            <translation>全レベル</translation>
+        </message>
+        <message>
+            <source>Filter logs...</source>
+            <translation>ログをフィルター...</translation>
+        </message>
+        <message>
+            <source>Clear</source>
+            <translation>クリア</translation>
+        </message>
+        <message>
+            <source>Waiting for ok-script.log</source>
+            <translation>ok-script.log を待機中</translation>
+        </message>
+        <message>
+            <source>records</source>
+            <translation>件</translation>
+        </message>
+        <message>
+            <source>Pause</source>
+            <translation>一時停止</translation>
+        </message>
+        <message>
+            <source>Resume</source>
+            <translation>再開</translation>
+        </message>
+        <message>
+            <source>View Log</source>
+            <translation>ログを表示</translation>
+        </message>
+        <message>
+            <source>Pin</source>
+            <translation>固定</translation>
+        </message>
+        <message>
+            <source>Unpin</source>
+            <translation>固定解除</translation>
         </message>
     </context>
     <context>
@@ -422,6 +467,10 @@
             <source>Click an option to add it.</source>
             <translation>オプションをクリックして追加します。</translation>
         </message>
+        <message>
+            <source>Search options...</source>
+            <translation>オプションを検索...</translation>
+        </message>
     </context>
     <context>
         <name>ModifyListItem</name>
@@ -459,29 +508,6 @@
             <source>app</source>
             <comment>Error</comment>
             <translation>エラー</translation>
-        </message>
-    </context>
-    <context>
-        <name>RunBar</name>
-        <message>
-            <source> Current Version: </source>
-            <translation> 現在のバージョン: </translation>
-        </message>
-        <message>
-            <source>Launcher </source>
-            <translation>ランチャー </translation>
-        </message>
-        <message>
-            <source>Choose Profile:</source>
-            <translation>プロファイルを選択:</translation>
-        </message>
-        <message>
-            <source>Start</source>
-            <translation>開始</translation>
-        </message>
-        <message>
-            <source>Download Dependencies and Start</source>
-            <translation>依存関係をダウンロードして開始</translation>
         </message>
     </context>
     <context>
@@ -755,8 +781,8 @@
             <translation>ゲームを開始できません。ゲームがインストールされていることを確認してください。</translation>
         </message>
         <message>
-            <source>NVIDIA/AMD filters or sharpening are enabled and may cause malfunctions!</source>
-            <translation>NVIDIA/AMD のフィルターまたはシャープ化が有効になっており、誤動作の原因になる可能性があります！</translation>
+            <source>{vendor} {feature} is enabled and may cause malfunctions!</source>
+            <translation>{vendor} {feature} が有効になっており、誤動作の原因になる可能性があります！</translation>
         </message>
         <message>
             <source>GPU Driver Warning</source>
@@ -813,12 +839,12 @@
             <translation>操作方法の選択</translation>
         </message>
         <message>
-            <source>Show Overlay</source>
-            <translation>デバッグオーバーレイを表示</translation>
+            <source>Enable Boxes</source>
+            <translation>ボックスを有効化</translation>
         </message>
         <message>
-            <source>Hide Overlay</source>
-            <translation>デバッグオーバーレイを隠す</translation>
+            <source>Disable Boxes</source>
+            <translation>ボックスを無効化</translation>
         </message>
         <message>
             <source>Show Log on Overlay</source>
@@ -855,6 +881,14 @@
         <message>
             <source>Log Folder</source>
             <translation>ログフォルダー</translation>
+        </message>
+        <message>
+            <source>Open Logs</source>
+            <translation>ログを開く</translation>
+        </message>
+        <message>
+            <source>View Log</source>
+            <translation>ログを表示</translation>
         </message>
     </context>
     <context>
@@ -979,57 +1013,6 @@
         <message>
             <source>Time Elapsed</source>
             <translation>経過時間</translation>
-        </message>
-    </context>
-    <context>
-        <name>UpdateBar</name>
-        <message>
-            <source>Current Version: </source>
-            <translation>現在のバージョン: </translation>
-        </message>
-        <message>
-            <source>Checking for Updates...</source>
-            <translation>アップデートを確認中...</translation>
-        </message>
-        <message>
-            <source>Delete Downloaded Dependencies</source>
-            <translation>ダウンロードした依存関係を削除</translation>
-        </message>
-        <message>
-            <source>Update Source:</source>
-            <translation>更新ソース:</translation>
-        </message>
-        <message>
-            <source>Check for Update</source>
-            <translation>アップデートを確認</translation>
-        </message>
-        <message>
-            <source>Current Version:</source>
-            <translation>現在のバージョン:</translation>
-        </message>
-        <message>
-            <source>TargetVersion:</source>
-            <translation>ターゲットバージョン:</translation>
-        </message>
-        <message>
-            <source>Update</source>
-            <translation>アップデート</translation>
-        </message>
-        <message>
-            <source>This is the newest version</source>
-            <translation>これは最新バージョンです</translation>
-        </message>
-        <message>
-            <source>Checking for Update...</source>
-            <translation>アップデートを確認中...</translation>
-        </message>
-        <message>
-            <source>Updating</source>
-            <translation>更新中</translation>
-        </message>
-        <message>
-            <source>Downgrade</source>
-            <translation>ダウングレード</translation>
         </message>
     </context>
     <context>
@@ -1160,6 +1143,30 @@
         <message>
             <source>Basic Options</source>
             <translation>基本オプション</translation>
+        </message>
+        <message>
+            <source>Enable Blur</source>
+            <translation>ぼかしを有効化</translation>
+        </message>
+        <message>
+            <source>Blur Game UID etc to enhance OLED life</source>
+            <translation>ゲーム UID などをぼかして OLED の寿命を延ばします</translation>
+        </message>
+        <message>
+            <source>Blur Algorithm</source>
+            <translation>マスク処理方式</translation>
+        </message>
+        <message>
+            <source>Method used to obscure configured areas</source>
+            <translation>設定領域を隠すための処理方式</translation>
+        </message>
+        <message>
+            <source>Blur</source>
+            <translation>ぼかし</translation>
+        </message>
+        <message>
+            <source>Inpaint</source>
+            <translation>インペイント</translation>
         </message>
         <message>
             <source>Use DirectML</source>
@@ -1342,7 +1349,7 @@
             <translation>ベータ版</translation>
         </message>
         <message>
-            <source>Kill Launcher after Start</source>
+            <source>Kill Launcher After Start</source>
             <translation>起動後にランチャーを終了する</translation>
         </message>
         <message>
@@ -1364,6 +1371,62 @@
         <message>
             <source>Target window inactive: Recording paused</source>
             <translation>対象ウィンドウで非アクティブ: 録画を一時停止しました</translation>
+        </message>
+        <message>
+            <source>Blur Interval</source>
+            <translation>遮蔽チェック間隔</translation>
+        </message>
+        <message>
+            <source>Seconds between processed overlay updates</source>
+            <translation>処理済みオーバーレイの更新間隔（秒）</translation>
+        </message>
+        <message>
+            <source>App Launcher</source>
+            <translation>アプリランチャー</translation>
+        </message>
+        <message>
+            <source>Configure the app launcher</source>
+            <translation>アプリランチャーを設定</translation>
+        </message>
+        <message>
+            <source>Auto Start {app_name}</source>
+            <translation>{app_name} を自動起動</translation>
+        </message>
+        <message>
+            <source>Start the launcher automatically when you sign in</source>
+            <translation>ログイン時にアプリランチャーを自動的に起動します</translation>
+        </message>
+        <message>
+            <source>Auto Update</source>
+            <translation>自動更新</translation>
+        </message>
+        <message>
+            <source>Choose how the launcher installs updates</source>
+            <translation>ランチャーが更新をインストールする方法を選択します</translation>
+        </message>
+        <message>
+            <source>Manual Update</source>
+            <translation>手動更新</translation>
+        </message>
+        <message>
+            <source>Automatic Update(Release Only)</source>
+            <translation>自動更新（正式リリースのみ）</translation>
+        </message>
+        <message>
+            <source>Automatic Update (Pre-release)</source>
+            <translation>自動更新（プレリリース）</translation>
+        </message>
+        <message>
+            <source>Launcher</source>
+            <translation>ランチャー</translation>
+        </message>
+        <message>
+            <source>Open Launcher</source>
+            <translation>ランチャーを開く</translation>
+        </message>
+        <message>
+            <source>Open the app launcher to manage updates</source>
+            <translation>アプリランチャーを開いて更新を管理します</translation>
         </message>
     </context>
     <context>
@@ -2597,6 +2660,36 @@
         <message>
             <source>NPU inferring Error, you might need to update the Intel NPU driver!</source>
             <translation>NPU推論エラー。Intel NPUドライバーを更新する必要があるかもしれません。</translation>
+        </message>
+    </context>
+    <context>
+        <name>GlobalConfigTab</name>
+        <message>
+            <source>Reset Config</source>
+            <translation>設定をリセット</translation>
+        </message>
+    </context>
+    <context>
+        <name>LabelAndFileSelector</name>
+        <message>
+            <source>Browse</source>
+            <translation>参照</translation>
+        </message>
+        <message>
+            <source>Select File</source>
+            <translation>ファイルを選択</translation>
+        </message>
+        <message>
+            <source>Select Folder</source>
+            <translation>フォルダーを選択</translation>
+        </message>
+        <message>
+            <source>All Files (*)</source>
+            <translation>すべてのファイル (*)</translation>
+        </message>
+        <message>
+            <source>Select File or Folder</source>
+            <translation>ファイルまたはフォルダーを選択</translation>
         </message>
     </context>
 </TS>
